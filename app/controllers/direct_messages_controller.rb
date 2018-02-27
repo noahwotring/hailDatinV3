@@ -21,4 +21,10 @@ class DirectMessagesController < ApplicationController
     Direct_Message.find(params[:id]).destroy
     redirect_to direct_messages_path
   end
+
+  private
+
+  def direct_message_params
+    params.require(:direct_message).permit(:title, :body)
+  end
 end
