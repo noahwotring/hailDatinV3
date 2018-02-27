@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  serialize :interests, Array
+  serialize :interest, Array
 end
