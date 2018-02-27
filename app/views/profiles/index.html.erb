@@ -1,0 +1,10 @@
+<h2>All Profiles</h2>
+
+<ol>
+  <%@profiles.each do |profile|%>
+  <li><%=profile%></li>
+  <%=link_to 'Go to user', profile%>
+  <%=link_to 'Delete this user', profile, {method: 'delete'}%>
+  <%=link_to 'Edit this user', edit_profile_path(user)%>
+  <%end%>
+</ol>
