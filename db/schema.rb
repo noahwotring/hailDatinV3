@@ -10,11 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180227155605) do
+=======
+ActiveRecord::Schema.define(version: 20180227153116) do
+>>>>>>> 0c9279600679aafa3864f277c5e83b8fe6cc22df
 
   create_table "direct_messages", force: :cascade do |t|
     t.string "title"
     t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.string "name"
+    t.text "about"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
