@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-
-  get 'sessions/new'
+  root 'sessions#new'
+  get 'login' => 'sessions#new', as: 'new_session'
+  post 'login' => "sessions#create"
+  get 'logout' => 'sessions#destroy'
 
   resources :users do
     resources :direct_messages
