@@ -1,0 +1,20 @@
+<h1>Users</h1>
+<p>All the users</p>
+
+  <table style="width:100%">
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Interests</th>
+    </tr>
+  <%= @users.each do |user| %>
+  <tr>
+    <td> <%= link_to user.username, user_path(user.id)  %> </td>
+    <td><%= user.password %> </td>
+     <% @interests = user.interest.split("").select{|char| ('abcdefghijklmnopqrstuvwxyz').include?(char.downcase) || (" ").include?(char)}.join("").split(" ") %>
+     <td> <% @interests.each do |interest|  %>
+    <%= interest %>, <% end %></td>
+  </tr>
+  <% end  %>
+
+</table>
