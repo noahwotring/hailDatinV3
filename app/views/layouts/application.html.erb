@@ -24,9 +24,9 @@
   </head>
 
   <body>
-    
+
     <% if current_user %>
-    <p>Welcome, <%= current_user %> </p>
+    <p>Welcome, <%= current_user.username %> </p>
     <p><%= link_to "Logout", logout_url %></p>
     <% else %>
     <% link_to "Login", new_session_path %>
