@@ -1,3 +1,4 @@
 class User < ApplicationRecord
-  serialize :interest, Array
+  serialize :interests, Array
+  has_many :direct_messages
 end
