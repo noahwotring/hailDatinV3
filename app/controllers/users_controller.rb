@@ -4,10 +4,12 @@ class UsersController < ApplicationController
   end
 
   def create
+
     new_user = User.new(user_params)
     new_user.save
     session[:user_id] = new_user.id
     redirect_to user_path new_user
+
   end
 
   def edit
@@ -32,12 +34,18 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+
     #@profile = @user.profiles
+
   end
 
   private
 
   def user_params
+
     params.require(:user).permit(:username, :password, :about, :age, :location, :interests)
   end
+
+    params.require
 end
+
