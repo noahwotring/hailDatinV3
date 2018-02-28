@@ -4,6 +4,9 @@ class UsersController < ApplicationController
   end
 
   def create
+    @user = User.new
+    @user[:username] = :username
+    @user[:password] = :password
   end
 
   def edit
@@ -14,10 +17,17 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    
+
   end
 
   def show
+    @user = User.find(params[:id])
   end
+
+  private
+
+  def user_params
+    params.require
+end
 
 end
