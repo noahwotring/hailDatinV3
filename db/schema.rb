@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 20180228062722) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "interest"
     t.text "interests"
     t.string "password_digest"
   end
