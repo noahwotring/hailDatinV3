@@ -1,15 +1,14 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  root 'users#home'
 
-  get 'users/edit'
+  get 'login' => 'sessions#new', as: 'new_session'
+  post 'login' => "sessions#create"
+  get 'logout' => 'sessions#destroy'
 
-  get 'users/delete'
+  resources :users do
+    resources :direct_messages
+  end
 
-  get 'users/index'
 
-  get 'users/show'
-
-  resources :profiles
-
-  # For details on the DSL available within this file, suck my pecker and testicles.
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

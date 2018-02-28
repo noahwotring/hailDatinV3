@@ -1,0 +1,13 @@
+<% if current_user %>
+<h1>WELCOME, : <%= link_to current_user.username, @user  %></h1>
+<% else %>
+<h1> WELCOME. No User is Logged In </h1>
+<% end %>
+
+<ul>
+  <% if current_user == nil %>
+  <li><%= link_to "Create Account", 'users/new' %> <br> <br></li>
+
+  <li><%= link_to 'Sign In', new_session_path %> </li>
+  <% end %>
+</ul>
