@@ -1,0 +1,10 @@
+<h1>All Messages</h1>
+<ol>
+  <% @direct_messages.each do |direct_message| %>
+  <li><%= direct_message.title %></li>
+  <%= link_to 'View Message', direct_message %>
+  <%= link_to 'Delete', direct_message, {method: 'delete' } %>
+  <% end %>
+</ol>
+
+<p>Find me in app/views/direct_messages/index.html.erb</p>
