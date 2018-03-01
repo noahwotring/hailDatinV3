@@ -12,8 +12,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180228165327) do
 =======
+=======
+>>>>>>> 2c2ac20a2437852bc029b9605082b3a5c186edeb
 ActiveRecord::Schema.define(version: 20180228172330) do
 
   create_table "conversations", force: :cascade do |t|
@@ -22,6 +25,7 @@ ActiveRecord::Schema.define(version: 20180228172330) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+<<<<<<< HEAD
 >>>>>>> kyle_branch
 =======
 ActiveRecord::Schema.define(version: 20180228062722) do
@@ -33,6 +37,8 @@ ActiveRecord::Schema.define(version: 20180228062722) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+=======
+>>>>>>> 2c2ac20a2437852bc029b9605082b3a5c186edeb
 
   create_table "messages", force: :cascade do |t|
     t.text "body"
