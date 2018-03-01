@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   post 'login' => "sessions#create"
   get 'logout' => 'sessions#destroy'
 
-  resources :users
 
-  resources :conversations do
+  resources :users do
+    resources :direct_messages
+
+  resources :conversations 
     resources :messages
   end
-
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

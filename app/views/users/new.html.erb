@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Sign Up Homie!</h1>
 
 
@@ -10,3 +11,18 @@
   <%= f.submit %>
 <% end %>
 <p>Find me in app/views/users/new.html.erb</p>
+=======
+<h1>Sign Up Homie!</h1>
+
+
+<div class="container-fluid">
+  <%= form_for @user do |f| %>
+    <%= f.label :username  %>
+    <%= f.text_field :username, placeholder: "Choose a Username" %><br>
+    <%= f.label :password %>
+    <%= f.text_field :password, placeholder: "Password" %><br>
+    <%= f.submit %>
+  <% end %>
+  <p>Find me in app/views/users/new.html.erb</p>
+</div>
+>>>>>>> ae74ae90cbdbd2d47303acc26f6c3ae8264dc74b

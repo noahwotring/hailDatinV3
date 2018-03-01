@@ -1,3 +1,76 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  background-image: url(background.jpg);
+  color: white;
+  left: 118px;
+}
+
+.jumbotron {
+  font-size: 40px;
+  position: fixed;
+  background-image: url(gothicromance.jpg);
+  text-align: center;
+  height: 900px;
+  width: 1300px;
+}
+
+@font-face {
+  font-family: "MetalMacabre";
+  src: url("MetalMacabre.ttf");
+}
+
+.jumbotron h1 {
+  display: inherit;
+  background: none;
+  font-family: "MetalMacabre";
+  font-weight: bold;
+  font-size: 95px;
+  right: 118px;
+  margin: none;
+  color: white;
+}
+
+.jumbotron lead {
+}
+
+.jumbotron p {
+  background: none;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 26px;
+}
+
+.HomeLogo {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background: none;
+  left: 620px;
+  bottom: 50px;
+}
+.Halo {
+  height: 65px;
+  width: auto;
+  position: fixed;
+  background: none;
+  left: 689px;
+  bottom: 330px;
+}
+
+.button_example{
+border:1px solid #be1d1d; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:22px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #E03333; background-image: -webkit-gradient(linear, left top, left bottom, from(#E03333), to(#707070));
+ background-image: -webkit-linear-gradient(top, #E03333, #707070);
+ background-image: -moz-linear-gradient(top, #E03333, #707070);
+ background-image: -ms-linear-gradient(top, #E03333, #707070);
+ background-image: -o-linear-gradient(top, #E03333, #707070);
+ background-image: linear-gradient(to bottom, #E03333, #707070);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#E03333, endColorstr=#707070);
+}
+
+.button_example:hover{
+ border:1px solid #961717;
+ background-color: #c21e1e; background-image: -webkit-gradient(linear, left top, left bottom, from(#c21e1e), to(#575757));
+ background-image: -webkit-linear-gradient(top, #c21e1e, #575757);
+ background-image: -moz-linear-gradient(top, #c21e1e, #575757);
+ background-image: -ms-linear-gradient(top, #c21e1e, #575757);
+ background-image: -o-linear-gradient(top, #c21e1e, #575757);
+ background-image: linear-gradient(to bottom, #c21e1e, #575757);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c21e1e, endColorstr=#575757);
+}
