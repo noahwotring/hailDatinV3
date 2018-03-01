@@ -1,13 +1,28 @@
-<% if current_user %>
+<div class="jumbotron">
+  <h1 class="display-3">Hail Datin'</h1>
+  <p class="lead">The world's favorite heavy metal dating site.</p>
+  <p>Find your metal angel today!</p>
+  <p class="lead">
+    <a class="button_example btn-primary btn-lg" href="users/new" role="button">Register</a>
+    <a class="button_example btn-primary btn-lg" href="#" role="button">Sign In</a>
+  </p>
+</div>
+
+
+
+<!-- <% if current_user %>
 <h1>WELCOME, : <%= link_to current_user.username, @user  %></h1>
 <% else %>
 <h1> WELCOME. No User is Logged In </h1>
-<% end %>
+<% end %> -->
 
-<ul>
+<!-- <ul>
   <% if current_user == nil %>
   <li><%= link_to "Create Account", 'users/new' %> <br> <br></li>
 
   <li><%= link_to 'Sign In', new_session_path %> </li>
   <% end %>
-</ul>
+</ul> -->
+
+<%= image_tag("HomeLogo.png", alt: "HomeLogo", class: "HomeLogo") %>
+<%= image_tag("Halo.png", :alt => "Halo", :class => "Halo") %>
