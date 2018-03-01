@@ -25,7 +25,29 @@
   </head>
 
   <body>
-
+    <div class="ui grid">
+    <div class="row">
+      <div class="fourteen wide centered column">
+        <h2 class="ui header">
+          <i class="mail icon"></i>
+          <div class="content">
+            Messages
+          </div>
+        </h2>
+        <div class="ui purple inverted menu">
+          <i class="home icon"></i><%= link_to "Home", root_path, class: "item" %>
+            <% if current_user %>
+              <%= link_to "Mailbox", conversations_path, class: "item" %>
+              <div class="right menu">
+                <%= link_to 'Sign Out', logout_path, class: "item" %>
+              </div>
+            <% else %>
+              <div class="right menu">
+                <%= link_to 'Sign Up', new_user_path, class: "item" %>
+                <%= link_to "Sign-In", login_path, class: "item" %>
+              </div>
+            <% end %>
+        </div>
     <% if current_user %>
     <p>Welcome, <%= current_user.username %> </p>
     <p><%= link_to "Logout", logout_url %></p>
