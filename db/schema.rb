@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20180228172330) do
     t.text "about"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -52,6 +53,7 @@ ActiveRecord::Schema.define(version: 20180228172330) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "interest"
     t.text "interests"
     t.string "password_digest"
   end
