@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy'
 
 
+  get 'user_profile/:id' => 'profiles#show', as: 'user_profile'
+  get 'user_profile/:id/edit' => 'profiles#edit', as: 'edit_profile'
+  patch 'user_profile/:id/edit' => 'profiles#update'
   resources :users do
-    resources :direct_messages
+    resources :profiles
   end
   resources :conversations do
     resources :messages

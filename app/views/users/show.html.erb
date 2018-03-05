@@ -4,3 +4,5 @@
 <p>Find me in app/views/users/show.html.erb</p>
 
 <%= @user.username %>
+<% profile = Profile.find_by(user_id: @user.id) %>
+<%= link_to "my profile", user_profile_path(profile) %>
