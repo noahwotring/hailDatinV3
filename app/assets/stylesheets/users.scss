@@ -1,16 +1,27 @@
 * {
   background-image: url(background.jpg);
   color: white;
-  left: 118px;
 }
 
+// *******************HOME PAGE***********************
+
 .jumbotron {
+  left: 128px;
   font-size: 40px;
-  position: fixed;
+  position: absolute;
   background-image: url(gothicromance.jpg);
   text-align: center;
-  height: 900px;
-  width: 1300px;
+  height: 100vh;
+  margin-bottom: 0px;
+}
+
+.HomeLogo1 {
+  height: 450px;
+  width: auto;
+  position: absolute;
+  background: none;
+  left: 537px;
+  bottom: 20px;
 }
 
 @font-face {
@@ -36,24 +47,10 @@
   background: none;
   font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 26px;
+  font-weight: 800;
 }
 
-.HomeLogo {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  background: none;
-  left: 620px;
-  bottom: 50px;
-}
-.Halo {
-  height: 65px;
-  width: auto;
-  position: fixed;
-  background: none;
-  left: 689px;
-  bottom: 330px;
-}
+
 
 .button_example{
 border:1px solid #be1d1d; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:22px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
@@ -74,3 +71,148 @@ border:1px solid #be1d1d; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
  background-image: -o-linear-gradient(top, #c21e1e, #575757);
  background-image: linear-gradient(to bottom, #c21e1e, #575757);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c21e1e, endColorstr=#575757);
 }
+// ========================================================================
+
+
+
+
+
+// **************************NEW USER******************************************
+
+.registration {
+  position: relative;
+  display: flex;
+  // text-align: center;
+  // left: 618px;
+  margin-left: 618px;
+  background: none;
+  top: 350px;
+}
+
+.registrationhail {
+  font-size: 120px;
+  position: absolute;
+  top: 190px;
+  left: 235px;
+  font-family: MetalMacabre;
+  background: none;
+}
+
+.registrationdatin {
+  font-size: 120px;
+  position: absolute;
+  top: 190px;
+  right: 115px;
+  font-family: MetalMacabre;
+  background: none;
+}
+
+.RegistrationLogo {
+  position: absolute;
+  background: none;
+  height: 450px;
+  width: auto;
+  left: 507px;
+  top: -40px;
+}
+
+// ===============================================================================
+
+
+
+// ***********************PROFILE************************
+
+
+
+.container-fluid {
+  background-image: url(gothicromance.jpg);
+  border-bottom: 2px ridge black;
+}
+
+
+// *************NAVBAR**************************************
+
+.navbar-header {
+  background: none;
+}
+
+.active {
+  background: none;
+}
+
+.signout {
+  list-style: none;
+  float: right;
+  right: 100px;
+}
+
+.navlogo {
+  top: -10px;
+  left: 10px;
+  position: absolute;
+  height: 75px;
+  width: auto;
+  background: none;
+}
+
+.navlogo2 {
+  top: -10px;
+  right: 10px;
+  position: absolute;
+  height: 75px;
+  width: auto;
+  background: none;
+}
+
+.navbar-brand {
+  font-family: MetalMacabre;
+  background: none;
+  font-size: 34px;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.navbar-header {
+  background: none;
+  position: absolute;
+  left: 618px;
+  text-align: center;
+  color: white;
+}
+
+.active {
+  position: absolute;
+  left: 100px;
+}
+
+.dropdown {
+  position: absolute;
+  left: 100px;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.navbar-nav {
+  background: none;
+  margin-top: 7px;
+  width: 100%;
+}
+
+.navbar-form {
+  background: none;
+  position: absolute;
+  right: 240px;
+  bottom: 3px;
+  padding-bottom: 3px;
+
+}
+
+
+.btn-default {
+  display: inline-block;
+  float: right;
+}
+// ==================================================

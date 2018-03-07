@@ -3,13 +3,18 @@
   <head>
     <title>HailDatinV3</title>
 
-    
+
 
 
 
     <%= csrf_meta_tags %>
 
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -17,7 +22,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
+
     <style>
     table {
     font-family: arial, sans-serif;
@@ -39,17 +44,13 @@
   </head>
 
   <body>
-    <div class="ui grid">
-    <div class="row">
-      <div class="fourteen wide centered column">
-        <h2 class="ui header">
-          <i class="mail icon"></i>
-          <div class="content">
-            Messages
-          </div>
-        </h2>
-        <div class="ui purple inverted menu">
-          <i class="home icon"></i><%= link_to "Home", root_path, class: "item" %>
+    <%= yield %>
+
+
+
+
+
+          <!-- <i class="home icon"></i><%= link_to "Home", root_path, class: "item" %>
             <% if current_user %>
               <%= link_to "Mailbox", conversations_path, class: "item" %>
               <div class="right menu">
@@ -60,14 +61,8 @@
                 <%= link_to 'Sign Up', new_user_path, class: "item" %>
                 <%= link_to "Sign-In", login_path, class: "item" %>
               </div>
-            <% end %>
-        </div>
-    <% if current_user %>
-    <p>Welcome, <%= current_user.username %> </p>
-    <p><%= link_to "Logout", logout_url %></p>
-    <% else %>
-    <% link_to "Login", new_session_path %>
-    <% end %>
-    <%= yield %>
+            <% end %> -->
+        <!-- </div> -->
+
   </body>
 </html>

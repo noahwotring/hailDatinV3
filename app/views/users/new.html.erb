@@ -1,21 +1,14 @@
-<<<<<<< HEAD
-<h1>Sign Up Homie!</h1>
+<div class="registrationhail">
+Hail
+</div>
 
+<div class="registrationdatin">
+Datin'
+</div>
 
+<h2>Sign Up Homie!</h2>
 
-<%= form_for @user do |f| %>
-  <%= f.label :username  %>
-  <%= f.text_field :username %><br>
-  <%= f.label :password %>
-  <%= f.text_field :password %><br>
-  <%= f.submit %>
-<% end %>
-<p>Find me in app/views/users/new.html.erb</p>
-=======
-<h1>Sign Up Homie!</h1>
-
-
-<div class="container-fluid">
+<div class="registration">
   <%= form_for @user do |f| %>
     <%= f.label :username  %>
     <%= f.text_field :username, placeholder: "Choose a Username" %><br>
@@ -23,6 +16,5 @@
     <%= f.text_field :password, placeholder: "Password" %><br>
     <%= f.submit %>
   <% end %>
-  <p>Find me in app/views/users/new.html.erb</p>
 </div>
->>>>>>> ae74ae90cbdbd2d47303acc26f6c3ae8264dc74b
+<%= image_tag("HomeLogo1.png", alt: "HomeLogo1", class: "RegistrationLogo") %>
